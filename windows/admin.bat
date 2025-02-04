@@ -1,4 +1,3 @@
-@echo off
 :: Executa o script com privilégios de administrador
 :: Verifica se o script está sendo executado como administrador
 net session >nul 2>&1
