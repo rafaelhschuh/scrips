@@ -29,6 +29,10 @@ sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/portainer/install.sh)"
 ## Observações
 - Certifique-se de executar os comandos como superusuário (`sudo`).
 - Os scripts são baixados e executados automaticamente, então verifique o conteúdo antes de rodá-los.
+- Ainda estou desenvolvendo mais scipts, conforme a necessidade irei atualizar o repositório.
 
 ## Contribuição
 Sinta-se à vontade para contribuir com novos scripts ou melhorias!
+
+#Web
+Acesse a versão web em <https://scripts.schuh.dev.br>
