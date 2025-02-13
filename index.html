@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Scripts</title>
+    <link rel="icon" href="/assets/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0;
+            padding: 20px;
+            background-color: #0f172a;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 85vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            height: 85vh;
+            background: #2a2e2d;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow-y: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+        #content {
+            line-height: 1.6;
+            color: #ffffff;
+        }
+        #content h1, #content h2, #content h3 {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 5px;
+        }
+        #content pre {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            position: relative;
+            font-size: 110%;
+        }
+        #content pre code {
+            font-family: 'JetBrains Mono', monospace;
+            background: none;
+            padding: 0;
+            border-radius: 0;
+            display: block;
+        }
+        .code-wrapper {
+            position: relative;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255,);
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #0f172a;
+            font-size: 14px;
+            
+        }
+        .copy-btn:hover {
+            background: rgba(255, 255, 255,);
+        }
+        .logo {
+            max-width: 900px;
+            width: 100%;
+            height: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="/assets/banner-light.png" alt="Schuh.dev.br logo">
+        <div id="content">Carregando...</div>
+    </div>
+    <script>
+        fetch('README.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('content').innerHTML = marked.parse(text);
+                addCopyButtons();
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = "❌ Erro ao carregar o README.md";
+                console.error('Erro ao carregar o arquivo:', error);
+            });
+
+        function addCopyButtons() {
+            document.querySelectorAll("#content pre").forEach(pre => {
+                const wrapper = document.createElement("div");
+                wrapper.classList.add("code-wrapper");
+                pre.parentNode.insertBefore(wrapper, pre);
+                wrapper.appendChild(pre);
+
+                const button = document.createElement("button");
+                button.classList.add("copy-btn");
+                button.innerText = "Copiar";
+                button.addEventListener("click", () => {
+                    const code = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(code).then(() => {
+                        button.innerText = "Copiado!";
+                        setTimeout(() => button.innerText = "Copiar", 2000);
+                    });
+                });
+                wrapper.appendChild(button);
+            });
+        }
+    </script>
+</body>
+</html>
