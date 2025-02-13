@@ -12,7 +12,7 @@ sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrip
 ```
 >Schuh.dev.br
 ```bash
-sudo bash -c "$(wget -qLO - https://scripts.schuh.dev.br/docker/install.sh)"
+sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/docker/install.sh)"
 ```
 
 ### Portainer
@@ -23,7 +23,7 @@ sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrip
 ```
 >Schuh.dev.br
 ```bash
-sudo bash -c "$(wget -qLO - https://scripts.schuh.dev.br/portainer/install.sh)"
+sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/portainer/install.sh)"
 ```
 
 ## Observações
