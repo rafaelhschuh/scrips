@@ -34,5 +34,5 @@ sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/portainer/install.sh)"
 ## Contribuição
 Sinta-se à vontade para contribuir com novos scripts ou melhorias!
 
-#Web
+## Web
 Acesse a versão web em <https://scripts.schuh.dev.br>
