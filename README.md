@@ -5,7 +5,7 @@ Este repositório contém scripts úteis para instalação de softwares essencia
 ## Comandos de Instalação
 
 ### Docker
-Instale o Docker executando o seguinte comando:
+Instale o Docker executando um dos comandos abaixo:
 >GitHub
 ```bash
 sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrips/refs/heads/main/docker/install.sh)"
@@ -16,7 +16,7 @@ sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/docker/install.sh)"
 ```
 
 ### Portainer
-Instale o Portainer com o comando abaixo:
+Instale o Portainer executando um dos comandos abaixo:
 >GitHub
 ```bash
 sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrips/refs/heads/main/portainer/install.sh)"
@@ -25,8 +25,8 @@ sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrip
 ```bash
 sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/portainer/install.sh)"
 ```
-### zsh - oh my zsh - spaceship 
-Instale o Portainer com o comando abaixo:
+### zsh + oh my zsh
+Instale o zsh e o "oh my zsh" executando um dos comandos abaixo:
 >GitHub
 ```bash
 sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrips/refs/heads/main/zsh/install.sh)"
@@ -34,6 +34,16 @@ sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrip
 >Schuh.dev.br
 ```bash
 sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/zsh/install.sh)"
+```
+### zsh - spaceship plugin (zsh nescesário primeiro)
+Instale a extensão do spaceship no seu zsh executando o um dos comandos abaixo:
+>GitHub
+```bash
+sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrips/refs/heads/main/zsh/extra.sh)"
+```
+>Schuh.dev.br
+```bash
+sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/zsh/extra.sh)"
 ```
 
 ## Observações
