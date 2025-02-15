@@ -34,7 +34,7 @@ sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrip
 >Schuh.dev.br
 ```bash
 sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/zsh/install.sh)"
-`
+```
 
 ## Observações
 - Certifique-se de executar os comandos como superusuário (`sudo`).
