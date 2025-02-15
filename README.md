@@ -25,6 +25,16 @@ sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrip
 ```bash
 sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/portainer/install.sh)"
 ```
+### zsh - oh my zsh - spaceship 
+Instale o Portainer com o comando abaixo:
+>GitHub
+```bash
+sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrips/refs/heads/main/zsh/install.sh)"
+```
+>Schuh.dev.br
+```bash
+sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/zsh/install.sh)"
+`
 
 ## Observações
 - Certifique-se de executar os comandos como superusuário (`sudo`).
