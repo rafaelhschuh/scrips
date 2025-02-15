@@ -26,7 +26,7 @@ sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrip
 sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/portainer/install.sh)"
 ```
 ### zsh + oh my zsh
-Instale o zsh e o "oh my zsh" executando um dos comandos abaixo:
+Instale o zsh e o "oh my zsh" executando um dos comandos abaixo: (recomendado a reinicialização do sistema após a instalação)
 >GitHub
 ```bash
 sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrips/refs/heads/main/zsh/install.sh)"
@@ -36,7 +36,7 @@ sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrip
 sudo bash -c "$(wget -qO - https://scripts.schuh.dev.br/zsh/install.sh)"
 ```
 ### zsh - spaceship plugin (zsh nescesário primeiro)
-Instale a extensão do spaceship no seu zsh executando o um dos comandos abaixo:
+Instale a extensão do spaceship no seu zsh executando o um dos comandos abaixo: (recomendado a reinicialização do sistema após a instalação)
 >GitHub
 ```bash
 sudo bash -c "$(wget -qLO - https://raw.githubusercontent.com/rafaelhschuh/scrips/refs/heads/main/zsh/extra.sh)"
